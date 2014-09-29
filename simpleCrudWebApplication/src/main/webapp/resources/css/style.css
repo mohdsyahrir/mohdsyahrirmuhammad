@@ -1,0 +1,346 @@
+/* Website template by freewebsitetemplates.com */
+body {
+	background: #ffb744 url(../images/bg-body.jpg) repeat left bottom;
+	font-family: "Times New Roman", Times, serif;
+	margin: 0;
+}
+#background {
+	background: url(../images/bg-pattern.jpg) repeat-x center top;
+	min-height: 1318px;
+}
+#page {
+	width: 960px;
+	margin: 0 auto;
+}
+img {
+	border: 0;
+}
+/*------------------------------ Sprites ------------------------------*/
+#navigation li, #navigation li a:hover, #navigation li.selected a {
+	background-image: url(../images/bg-menu.png);
+	background-repeat: repeat-x;
+}
+#contents div.box, #contents div.box > div, #contents div.body {
+	background-image: url(../images/content-box.png);
+	background-repeat: no-repeat;
+}
+#main div.box, #main div.box > div, #main div.box > div > div {
+	background-image: url(../images/bg-box.png);
+	background-repeat: no-repeat;
+}
+/*------------------------------ HEADER ------------------------------*/
+#header {
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+/** Logo **/
+#logo {
+	float: left;
+	margin-bottom: 20px;
+	margin-left: 49px;
+}
+/** Navigation **/
+#navigation {
+	background: url(../images/bg-navigation.png) no-repeat;
+	clear: both;
+	height: 50px;
+	width: 860px;
+	margin: 0 auto;
+	padding: 1px;
+}
+#navigation ul {
+	display: inline-block;
+	width: 860px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#navigation li {
+	float: left;
+	background-position: 0 -118px;
+	background-repeat: no-repeat;
+	height: 49px;
+	width: 122px;
+	margin: 0;
+	padding-left: 1px;
+	text-align: center;
+}
+#navigation li:first-child {
+	background: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+#navigation li a {
+	color: #fff;
+	display: block;
+	font: bold 14px/48px Arial, Helvetica, sans-serif;
+	height: 49px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#navigation li a:hover {
+	background-position: 0 -59px;
+	color: #6d6157;
+}
+#navigation li.selected a {
+	background-position: 0 0;
+	color: #e4e1bd;
+}
+/*------------------------------ CONTENTS ------------------------------*/
+#contents {
+	display: inline-block;
+	width: 865px;
+	padding: 0 47px;
+}
+#contents h1 {
+	color: #316e66;
+	font: 26px/30px "Times New Roman", Times, serif;
+	margin: 18px 0 20px;
+	padding-left: 2px;
+	text-transform: uppercase;
+}
+#contents div.body h1, #contents h2 {
+	color: #316e66;
+	font: 30px/30px "Times New Roman", Times, serif;
+	margin: 0 0 18px;
+	text-transform: uppercase;
+}
+#contents h2 {
+	font-size: 22px;
+	margin: 0 0 30px;
+}
+#contents h2 a {
+	color: #2c9688;
+	text-decoration: none;
+}
+#contents p {
+	color: #5a4535;
+	font-size: 15px;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 0 24px 2px;
+}
+#contents p a {
+	color: #5a4535;
+}
+#contents p a:hover, #news div.sidebar ul li a:hover {
+	color: #917157;
+}
+/** box-shadow **/
+#contents div.box {
+	background-position: left bottom;
+	margin-bottom: 20px;
+	margin-left: 1px;
+	padding: 0 0 6px;
+}
+#contents div.box > div {
+	background-position: -1745px top;
+	padding: 6px 0 0;
+}
+#contents div.body {
+	background-position: -871px top;
+	background-repeat: repeat-y;
+	min-height: 980px;
+	padding: 30px 40px 0;
+}
+/** Laporan **/
+#laporan {
+	display: inline-block;
+	width: 784px;
+}
+#laporan > div {
+	width: 560px;
+	border-right: 1px solid #bbbbbb;
+	padding-right: 35px;
+}
+#laporan > div img {
+	border: 1px solid #2c9688;
+	margin-bottom: 20px;
+}
+#laporan > div h2 {
+	margin-bottom: 12px;
+}
+#laporan > div span {
+	color: #5a4535;
+	display: block;
+	font: 15px/24px "Times New Roman", Times, serif;
+	margin-bottom: 30px;
+}
+#laporan > div span.author {
+	color: #2c9688;
+	display: block;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+#laporan div.sidebar {
+	float: right;
+	width: 160px;
+	border: 0;
+	padding: 0;
+}
+#laporan div.sidebar h3 {
+	color: #2c9688;
+	font-size: 20px;
+	font-weight: normal;
+	border-top: 1px solid #b7b7b7;
+	margin: 0 0 12px;
+	padding-top: 18px;
+	text-transform: uppercase;
+}
+#laporan div.sidebar h3:first-child {
+	border: 0;
+	padding-top: 0px;
+}
+#laporan div.sidebar ul {
+	list-style: none;
+	margin: 0 0 8px;
+	padding: 0;
+}
+#laporan div.sidebar ul li a {
+	color: #5a4535;
+	display: inline-block;
+	font-size: 15px;
+	margin-bottom: 6px;
+	text-decoration: none;
+}
+#laporan ul li {
+	margin-bottom: 12px;
+}
+
+/** Jualan **/
+#jualan form {
+	float: right;
+	color: #5a4535;
+	height: 320px;
+	width: 420px;
+	border: 1px solid #5a4535;
+	padding: 19px 19px 6px;
+}
+#jualan form table {
+	border-collapse: collapse;
+}
+#jualan form table td {
+	padding-bottom: 6px;
+}
+#jualan table td:first-child {
+	font-size: 14px;
+	line-height: 30px;
+	width: 180px;
+	text-transform: uppercase;
+}
+#jualan table td.txtarea {
+	vertical-align: top;
+}
+#jualan form input {
+	height: 17px;
+	line-height: 17px;
+	width: 278px;
+	border: 1px solid #5a4535;
+	border-radius: 2px;
+}
+#jualan textarea {
+	height: 143px;
+	line-height: 17px;
+	width: 338px;
+	border: 1px solid #5a4535;
+	border-radius: 2px;
+	overflow: auto;
+	resize: none;
+}
+#jualan input.btn {
+	background: url(../images/btn-send.png) no-repeat -70px 0;
+	cursor: pointer;
+	height: 26px;
+	width: 60px;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+#jualan input.btn:hover {
+	background-position: 0 0;
+}
+#jualan p span {
+	display: block;
+	text-transform: uppercase;
+}
+/*------------------------------ FOOTER ------------------------------*/
+#footer {
+	color: #594334;
+	font-size: 14px;
+	line-height: 48px;
+	margin: -38px 0 20px;
+	padding-top: 42px;
+	text-transform: uppercase;
+}
+#footer > div {
+	background-color: #ac9e94;
+	height: 48px;
+	width: 822px;
+	border-bottom: 1px solid #72675f;
+	border-top: 1px solid #cdbeb2;
+	margin: 0 auto;
+	padding: 0 20px;
+	text-align: right;
+}
+#footer ul.navigation {
+	float: left;
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#footer ul.navigation li {
+	float: left;
+	margin-right: 10px;
+}
+#footer ul.navigation li a {
+	color: #594334;
+	padding: 0 5px;
+	text-decoration: none;
+}
+#footer ul.navigation li:first-child a {
+	border-left: 0;
+	padding-left: 0;
+}
+#footer ul.navigation li a:hover {
+	color: #eee7c3;
+}
+#footer ul.navigation li.active a {
+	color: #fff;
+}
+#footer p {
+	margin: 0;
+	text-align: center;
+	text-transform: none;
+}
+
+.ui-default-state { padding: .5em 1em; cursor: pointer; }
+
+.ui-textfield {
+   	margin-bottom:10px;
+	margin-top:1px;
+	width:20%;
+	padding:6px;
+	border-radius:5px;
+	border:2px solid gray;
+}
+
+fieldset { border:1px solid green }
+
+legend {
+  padding: 0.2em 0.5em;
+  border:1px solid green;
+  color:green;
+  font-size:90%;
+  text-align:left;
+  }
+  
+.ui-label {
+  float:left;
+  width:25%;
+  margin-right:0.5em;
+  padding-top:none;
+  text-align:right;
+  font-weight: bold;
+  } 
+
