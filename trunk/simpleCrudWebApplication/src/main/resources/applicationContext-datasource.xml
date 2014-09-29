@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>classpath:jdbc.properties</value>
+		</property>
+	</bean>
+	
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy">
+		<property name="targetDataSource">
+			<bean class="oracle.jdbc.pool.OracleDataSource" destroy-method="close">
+			    <property name="URL" value="${jdbc.url}" />
+			    <property name="user" value="${jdbc.user}" />
+			    <property name="password" value="${jdbc.password}" />
+			    <property name="driverType" value="${jdbc.driver}" />
+			    <property name="connectionProperties">
+			    <props>
+			        <prop key="includeSynonyms">true</prop>
+			    </props>
+			    </property>
+		        <property name="connectionCachingEnabled" value="true"/>
+		        <property name="connectionCacheProperties">
+		            <props>
+		                <prop key="PropertyCheckInterval">60</prop>         
+		                <prop key="ValidateConnection">true</prop>
+		                <prop key="MinLimit">5</prop>
+		                <prop key="MaxLimit">25</prop>
+		                <prop key="InitialLimit">3</prop>
+		                <prop key="ConnectionWaitTimeout">60</prop>        
+		                <prop key="InactivityTimeout">1800</prop>           
+		                <prop key="AbandonedConnectionTimeout">600</prop>   
+		            </props>
+		        </property>
+		    </bean>
+		</property>
+	</bean>
+</beans>
